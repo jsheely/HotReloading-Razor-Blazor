@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Right</h1>
+<form method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="submit" value="Submit" />
+    @Html.AntiForgeryToken()
+</form>
+
+</div>
